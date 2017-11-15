@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookmarker App | Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="fetchBookmarks()">
+
+  <header class="nav">
+    <a class="nav_btn" href="index.html">Bookmarker App</a>
+    <a href="#bookmarks"><p>View Bookmarks</p></a>
+  </header>
+
+  <section class="banner">
+    <h1>Bookmark Your Favourite Sites</h1>
+    <p class="tagline">Our App will keep them safe!</p>
+
+  <div class="row">
+    <div class="row_cell">
+      <img src="img/agenda.svg" alt="briefcase icon">
+      <p>Simple</p>
+    </div>
+    <div class="row_cell">
+      <img src="img/closed-lock-.svg" alt="briefcase icon">
+      <p>Secure</p>
+    </div>
+    <div class="row_cell">
+      <img src="img/check-square.svg" alt="briefcase icon">
+      <p>Satisfying</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="add-bookmark">
+
+  <header class="nav">
+    <h2>Add A Bookmark</h2>
+  </header>
+
+  <form id="myForm">
+    <label>Site Name</label>
+     <input type="text" id="siteName" placeholder="Website Name">
+     <label>Site URL</label>
+     <input type="text" id="siteUrl" placeholder="Website URL">
+    <button type="submit" class="btn btn-submit">Submit</button>
+  </form>
+
+</section>
+
+<section id="bookmarks" class="bookmarks-section">
+
+    <h2 class="bookmarks-list-header">Bookmarked Sites</h2>
+
+    <div id="bookmarksResults">
+
+    </div>
+
+</section>
+
+<footer class="nav">
+  <a href="https://chido-designs.co.uk/">&copy; CHIDO DESIGNS 2017</a>
+  <a class="nav_btn" href="index.html"><p>Bookmarker App</p></a>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

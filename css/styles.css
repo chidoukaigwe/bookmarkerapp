@@ -1,0 +1,332 @@
+html, body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
+   font-family: helvetica, serif;
+   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav{
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: #dd4c4c;
+}
+
+.nav a:hover{
+  color: #f48888;
+  -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+}
+
+.nav .nav_btn{
+  float: left;
+  font-size: 30px;
+  margin-left: 1em;
+}
+
+.nav p{
+  float: right;
+  padding: 0.75em 2.5em;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 100;
+  border: solid #dd4c4c 1px;
+  border-radius: 100px;
+  margin-right: 2em;
+  margin-top: 12px;
+}
+
+.nav p:hover{
+  color: white;
+  border: solid #f48888 1px;
+  background-color: #f48888;
+}
+
+.banner, .add-bookmark, .bookmarks-section{
+  color: white;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0.5)), url(../img/banner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  text-align: center;
+}
+
+.banner h1{
+  padding: 1.5em 0 0 0;
+  margin: 0;
+  font-size: 56px;
+}
+
+.tagline{
+  font-weight: 100;
+  margin: 0.5em 0 1em 0;
+}
+
+.banner a p{
+  background-color: white;
+  width: 140px;
+  padding: 0.75em 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6.25em;
+}
+
+.row{
+  width: 100%;
+}
+
+.row_cell{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  text-align: center;
+  margin: 1em 1em;
+  border: solid 4px white;
+  border-radius: 25px;
+}
+
+.row_cell img{
+  width: 80px;
+  height: auto;
+  margin: 3.65em 0 0 0;
+}
+
+/*ADD BOOKMARK*/
+.add-bookmark{
+  margin-top: 2em;
+  background: #fff;
+}
+
+.add-bookmark h2, .bookmarks-section h2{
+  color: #f48888;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.add-bookmark form{
+  width: 70%;
+  padding: 5em;
+  margin: 1em auto;
+  background-color: #dd4c4c;
+}
+
+input[type=text]{
+    width: 100%;
+    padding:2em;
+    margin: 1em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+form label{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+input[placeholder]{
+  text-align: center;
+  font-weight: 100;
+}
+
+.bookmarks-section{
+  background-image: none;
+  width: 82%;
+  margin: 0 auto;
+}
+
+.bookmarks-section h2{
+  color: #f48888;
+  padding: .1em;
+}
+
+.bookmarked-item{
+  width: 30%;
+  margin: .5em;
+  background-color: white;
+  box-shadow: 2px 3px 3px 2px rgba(102, 102, 102, 0.2);
+  border: 1px solid lightgrey;
+  color: #f48888;
+  display: inline-block;
+}
+
+.bookmarked-item h3{
+  font-size: 1.3em;
+}
+
+.btn{
+  border: none;
+  outline: none;
+  color: white;
+  padding: .5em 1em;
+  font-size: .9em;
+  cursor: pointer;
+  margin-left: .2em;
+}
+
+.btn-submit{
+  padding: 1em 2em;
+  font-size: .9em;
+  background-color:#fe8181;
+  color: #fff;
+  border: solid 4px white;
+}
+
+.btn-submit:hover{
+  background-color: #fe5757;
+  -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+}
+
+.btn-visit{
+  background-color:#e5e5ff;
+}
+
+.btn-visit:hover{
+  background-color:#cacaf9;
+  -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+}
+
+.btn-delete{
+  background-color: #f48888;
+  -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+}
+
+.btn-delete:hover{
+  background-color: #fc7171;
+  -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+}
+
+footer.nav{
+  border-top: 1px solid #dd4c4c;
+}
+
+footer a{
+  float: right;
+  margin-right: 1em;
+}
+
+#bookmarks{
+  outline: none;
+}
+
+@media screen and (max-width: 770px){
+
+  .nav{
+    height: 120px;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  .nav p, .nav .nav_btn{
+    float:none;
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .nav .nav_btn{
+    font-size: 20px;
+  }
+
+  .banner h1{
+    padding: 1em 0 0 0;
+    margin: 0;
+    font-size: 35px;
+  }
+
+  .tagline{
+    display: none;
+  }
+
+  .add-bookmark{
+    width: 100%;
+  }
+
+  .add-bookmark h2, .bookmarks-section h2{
+    color: #f48888;
+    margin: 1em 0;
+  }
+
+  .add-bookmark form{
+    width: 55%;
+    margin: -3em auto;;
+  }
+
+  input[type=text]{
+      padding:1em;
+  }
+
+  .bookmarked-item{
+    width: 100%;
+    background-color: white;
+    box-shadow: none;
+    border: none;
+  }
+
+  .btn {
+    border: none;
+    outline: none;
+    color: #4e4845;
+    padding: .2em 1em;
+  }
+
+  .btn-submit{
+    padding: 1em 2em;
+    font-size: .9em;
+    background-color:#fe8181;
+    color: #fff;
+    border: solid 4px white;
+  }
+
+  footer a{
+    float: none;
+    margin-right:0;
+  }
+
+
+}
+
+@media screen and (max-width: 1280px){
+		
+ .row{
+  width: 100%;
+}
+
+.row_cell{
+  width: 180px;
+  height: 180px;
+  display: inline-block;
+  text-align: center;
+  margin: 1em 1em;
+  border: solid 4px white;
+  border-radius: 25px;
+}
+
+.row_cell img{
+  width: 80px;
+  height: auto;
+  margin: 3.65em 0 0 0;
+}
+	
+}
